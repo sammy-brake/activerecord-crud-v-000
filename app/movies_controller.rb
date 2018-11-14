@@ -37,7 +37,11 @@ def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
 end
 
 def can_get_the_first_item_in_the_database
+<<<<<<< HEAD
  Movie.first
+=======
+ self.class.first
+>>>>>>> 888328f50dc773f8d6e1aadb3a967e26b6803dda
 end
 
 def can_get_the_last_item_in_the_database
@@ -48,7 +52,7 @@ def can_get_size_of_the_database
  Movie.count
 end
 
-def can_find_the_first_item_from_the_database_using_id
+def can_find_the_first_item_from_the_database_using_id(id)
   Movie.find(id)
 end
 
